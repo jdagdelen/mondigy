@@ -18,7 +18,7 @@ Let's define a db connection and start annotating data from our MongoDB database
 
 *Step 1.* Create a config file. For this example, we'll call it `my_db_config.json`.
 This config gets the first 1000 entries that are `in_stock` from the `products` collection 
-of our database', in order of decreasing `date_added`. 
+of our database, in order of decreasing `date_added`. 
 
 ##### my_db_config.json
 ```angular2
