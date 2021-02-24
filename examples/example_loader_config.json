@@ -1,5 +1,4 @@
 {
-  "dataset": "A name to save the dataset under, e.g. 'my_NER_annotations'.",
   "host": "Hostname of MongoDB service.",
   "user": "Username for MongoDB",
   "password": "Password for MongoDB",
@@ -9,7 +8,7 @@
   "collection": "Name of collection to load documents from.",
   "text_field": "Name of the field that contains the text to be annotated.e.g. 'abstract'",
   "other_fields": "Names of other fields to include for display, separated by commas. e.g. 'title,authors,doi'",
-  "query": "String representation of query dictionary to pass to collection's find() method. To get all data, use '{}'.",
+  "query": "Query dictionary to pass to collection's find() method. To get all data, use empty dict (e.g. '{}').",
   "sort": "Sort tuple to pass to collection find() method. e.g. ('date', -1)",
   "limit": "Limit for number of documents in task. e.g. 1000"
 }

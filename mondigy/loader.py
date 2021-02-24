@@ -12,13 +12,12 @@ def mongo_loader(config: str):
         config: path to db configuration file. See examples/example_loader_config.json
 
     """
-
     with open(config) as f:
         config_data = json.load(f)
 
     db = get_database(config_data)
     source_collection = db[config_data["collection"]]
-    query = json.loads(config_data.get("query", "{}"))
+    query = config_data.get("query", {})
 
     documents = source_collection.find(query)
     if "limit" in config_data and config_data["limit"]:
@@ -28,7 +27,6 @@ def mongo_loader(config: str):
 
     for doc in documents:
         task = {"text": doc[config_data["text_field"]]}
-        for field in config_data["other_fields"].split(","):
-            field = field.strip()
+        for field in config_data["other_fields"]:
             task[field] = doc[field]
         print(json.dumps(task))
