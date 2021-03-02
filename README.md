@@ -84,3 +84,7 @@ supplying the paths of your config file and the Mondigy loader.
 ## License
 
 MIT © [John Dagdelen](jdagdelen.github.io)
+
+## Aknowledgements
+
+[Haoyan Huo](https://github.com/hhaoyan) co-authored the Database class used by this library.
