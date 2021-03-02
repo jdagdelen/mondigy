@@ -1,5 +1,7 @@
 ## Mondigy configuration parameters
-The following parameters go in `prodigy.json` in your Prodigy Home
+The following parameters go in the  `prodigy.json` in your Prodigy Home
+
+#### Source_db config parameters
 
 * "host": "Hostname of MongoDB service."
 * "user": "Username for MongoDB"
@@ -13,3 +15,6 @@ The following parameters go in `prodigy.json` in your Prodigy Home
 * "query": "Query dictionary to pass to collection's find() method. To get all data, use empty dict (e.g. '{}'). Used to load examples from source collection"
 * "sort": "Sort list to pass to collection find() method. e.g. ['date', -1]. Used to load examples from source collection"
 * "limit": "Limit for number of documents in task. e.g. 1000. Used to load examples from source collection"
+
+#### Annotations_db config parameters 
+
