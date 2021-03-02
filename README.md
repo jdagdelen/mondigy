@@ -87,4 +87,4 @@ MIT © [John Dagdelen](jdagdelen.github.io)
 
 ## Aknowledgements
 
-[Haoyan Huo](https://github.com/hhaoyan) co-authored the Database class used by this library.
+The AnnotationDatabase class is based on code originally written by [Haoyan Huo](https://github.com/hhaoyan).
