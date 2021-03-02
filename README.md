@@ -30,7 +30,8 @@ To set up mondigy, just enter your MongoDB connection info into your
 which is found in your `PRODIGY_HOME` directory. The source database and annotations 
 database (where your completed annotations are stored by Prodigy) can be configured 
 independently or the same database can be specified for both if you want everything
-in the same db. See [/example_config/prodigy.json](/example_config/prodigy.json)
+in the same db. See 
+[example_config/prodigy.json](https://github.com/jdagdelen/mondigy/example_config/prodigy.json)
 for an example config file.
 
 ## Code Example
