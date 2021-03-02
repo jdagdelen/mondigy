@@ -1,3 +1,5 @@
+## Attribution: Some of the code in AnnotationDatabase was originally written by Haoyan Huo (@hhaoyan) as part of the COVIDScholar project (covidscholar.org)
+
 import os
 import json
 import time
