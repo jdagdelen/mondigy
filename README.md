@@ -6,8 +6,10 @@ for [Prodigy](https://prodi.gy) annotation applications.
 ## Motivation
 Prodigy naviely supports loading text data from files and dataset objects, 
 but annotating data that is stored in a MongoDB database is not natively 
-supported. With *mondigy* you can source annotations from a 
-MongoDB collection and/or store your annotations in a MongoDB database.
+supported. 
+
+With *mondigy* you can annotate data from a MongoDB collection 
+and store your annotations in a MongoDB database.
 
 ## Features
 * Annotate text data from MongoDB
