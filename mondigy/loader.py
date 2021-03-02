@@ -1,6 +1,5 @@
-from mondigy.database import get_database
+from mondigy.database import MongoDatabase
 import prodigy
-import json
 
 
 @prodigy.recipe("mongo-loader", config=("Path to configuration file for loader.", "positional", None, str))
@@ -12,13 +11,12 @@ def mongo_loader(config: str):
         config: path to db configuration file. See examples/example_loader_config.json
 
     """
-    with open(config) as f:
-        config_data = json.load(f)
+    config = prodigy.get_config()
+    config_data = config["db_settings"]["mongodb"]
 
-    db = get_database(config_data)
+    db = MongoDatabase(config_data).db
     source_collection = db[config_data["collection"]]
     query = config_data.get("query", {})
-
     documents = source_collection.find(query)
     if "limit" in config_data and config_data["limit"]:
         documents = documents.limit(config_data["limit"])
@@ -29,4 +27,4 @@ def mongo_loader(config: str):
         task = {"text": doc[config_data["text_field"]]}
         for field in config_data["other_fields"]:
             task[field] = doc[field]
-        print(json.dumps(task))
+        yield task
