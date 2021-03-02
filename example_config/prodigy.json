@@ -15,19 +15,30 @@
   "db": "mondigy.db",
   "db_settings": {
     "mongodb": {
-      "host": "<mongo_hostname>",
-      "user": "<mongo_user>",
-      "password": "<mongo_password>",
-      "database": "<mongo_database_name>",
-      "auth_source": "<mongo_auth_database>",
-      "collection": "<source_collection_name>",
-      "text_field": "<source_text_field>",
-      "other_fields": [
-        "<other_field_1>",
-        "<other_field_2>"
-      ],
-      "query": {"<other_field_1>": true},
-      "limit": 1000
+      "source_db": {
+        "host": "<mongo_hostname>",
+        "user": "<mongo_user>",
+        "password": "<mongo_password>",
+        "database": "<mongo_database_name>",
+        "auth_source": "<mongo_auth_database>",
+        "collection": "<source_collection_name>",
+        "text_field": "<source_text_field>",
+        "other_fields": [
+          "<other_field_1>",
+          "<other_field_2>"
+        ],
+        "query": {
+          "<other_field_1>": true
+        },
+        "limit": 1000
+      },
+      "annotations_db": {
+        "host": "<mongo_hostname>",
+        "user": "<mongo_user>",
+        "password": "<mongo_password>",
+        "database": "<mongo_database_name>",
+        "auth_source": "<mongo_auth_database>"
+      }
     }
   },
   "api_keys": {},

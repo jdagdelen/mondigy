@@ -37,7 +37,7 @@ class AnnotationDatabase(object):
     def __init__(self, display_id='mongodb', display_name="Custom MongoDB Database", db=None):
 
         config = prodigy.get_config()
-        config_data = config["db_settings"]["mongodb"]
+        config_data = config["db_settings"]["mongodb"]["annotations_db"]
 
         # if not (config_data and config_data is not {}):
         #     raise AssertionError("AnnotationDatabases cannot be initialized without config file data.")

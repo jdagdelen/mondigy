@@ -46,9 +46,11 @@ supplying the paths of your config file and the Mondigy loader.
 *Step 3.* Annotate! 
 
 
-
-## Installation
+## Installation & Setup
 To install Mondigy, simply clone this repo via `git clone https://github.com/jdagdelen/mondigy.git`.
+
+Mondigy will set up the collections it requires in your mongo database. They are named with a `_p.<collection>` 
+convention. Don't delete these collections or manually edit any of the documents in them.
 
 ## License
 

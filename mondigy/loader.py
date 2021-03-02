@@ -12,7 +12,7 @@ def mongo_loader(config: str):
 
     """
     config = prodigy.get_config()
-    config_data = config["db_settings"]["mongodb"]
+    config_data = config["db_settings"]["mongodb"]["source_db"]
 
     db = MongoDatabase(config_data).db
     source_collection = db[config_data["collection"]]
