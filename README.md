@@ -42,7 +42,7 @@ we'll be limiting our annotations to the 1000 entries that are `in_stock` from t
 of our database. We'll also include the product name and product id in the data returned to Prodigy 
 so we can include that information in a custom view. .
 
-##### my_db_config.json
+##### prodigy.json
 ```
   ...
   "db": "mondigy.db",
