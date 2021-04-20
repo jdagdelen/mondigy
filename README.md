@@ -76,7 +76,7 @@ so we can include that information in a custom view. .
 *Step 2.* Start your Prodigy server and let mondigy point your MongoDB collection at it by 
 supplying the paths of your config file and the Mondigy loader.
 
-```prodigy ner.manual my_ner_task en_core_web_sm - --label FEATURE,KEYWORD```
+```prodigy ner.manual my_ner_task en_core_web_sm - --label FEATURE,KEYWORD --loader mondigy.loader```
 
 
 *Step 3.* Annotate! 
